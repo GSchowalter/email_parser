@@ -11,7 +11,7 @@ def main(argv):
     FILE = open("sample.out", "w+")
     line_count = 0
 
-    with open(argv[1], 'r') as _in:
+    with open(argv[1], 'r', errors="ignore") as _in:
         contents = _in.readlines()
 
     # create an iterator object from that iterable
@@ -22,8 +22,7 @@ def main(argv):
         try:
             # get the next item
             line = next(iter_obj)
-            plain_line = rtf_to_text(line)
-            if(plain_line.startswith("From:")):
+            if(line.startswith("From:")):
                 new_email = email(_from, subject, date, to, body)
                 body = ""
                 _from = line

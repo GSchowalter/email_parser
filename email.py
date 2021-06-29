@@ -11,5 +11,7 @@ class email:
         # TODO write a function that returns the a string in the output format
         # return self._from + self.subject + self.date + self.to + self.body
 
-        str = "{} / {} / {} \n {}".format(self.date, self._from.strip(), self.subject, self.body)
+        if(self._from == "" and self.subject == "" and self.date == ""):
+            return "Empty email\n"
+        str = "{} / {} / {} \n {}".format(self.date, self._from.strip(), self.subject, self.body.strip())
         return str
