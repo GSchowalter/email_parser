@@ -9,7 +9,6 @@ def main(argv):
     date = ""
     to = ""
     FILE = open("sample.out", "w+")
-    line_count = 0
 
     with open(argv[1], 'r', errors="ignore") as _in:
         contents = _in.readlines()
@@ -20,6 +19,7 @@ def main(argv):
     # infinite loop
     while True:
         try:
+            # TODO add support for other email formats
             # get the next item
             line = next(iter_obj)
             if(line.startswith("From:")):
@@ -34,6 +34,8 @@ def main(argv):
                 body += line
         except StopIteration:
             # if StopIteration is raised, break from loop
+            new_email = email(_from, subject, date, to, body)
+            FILE.write(new_email.to_string())
             break
     FILE.close()
         
