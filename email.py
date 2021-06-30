@@ -1,3 +1,4 @@
+import re
 class email:
     
     def __init__(self, _from="From No One", subject="No Subject", date="No Date", to="To no one", body="No body text"):
@@ -8,12 +9,14 @@ class email:
         self.body = body
 
     def remove_reply(self, str):
-        # On (Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)* \d\d, \d\d\d\d, at \d?\d:\d\d
-        if(str.__contains__("On ")):
-            index_of_reply = str.index("On ")
+        # "On (Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)* \d\d, \d\d\d\d, at \d?\d:\d\d"
+        p = re.compile("On ?((Mon|Tue(s)?|Wed(nes)?|Thu(r)?(s)?|Fri|Sat(ur)?|Sun)(day)?)?,? (Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)* \d?\d, \d\d\d\d,? at \d?\d:\d\d")
+        match = p.search(str)
+        if match:
+            index_of_reply = match.start()
             return str[:index_of_reply]
-        else:
-            return str
+        return str
+
 
     def to_string(self):
         # TODO write a function that returns the a string in the output format
