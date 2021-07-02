@@ -26,9 +26,15 @@ def main(argv):
                 new_email = email(_from, subject, date, to, body)
                 body = ""
                 _from = line
-                subject = rtf_to_text(next(iter_obj))
-                date = rtf_to_text(next(iter_obj))
-                to = rtf_to_text(next(iter_obj))
+                subject_line = rtf_to_text(next(iter_obj))
+                if(subject_line.startswith("Subject:")):
+                    subject = subject_line
+                    date = rtf_to_text(next(iter_obj))
+                    to = rtf_to_text(next(iter_obj))
+                else:
+                    subject = "No Subject"
+                    date = subject_line
+                    to = rtf_to_text(next(iter_obj))
                 FILE.write(new_email.to_string())
             else:
                 body += line
