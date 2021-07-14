@@ -3,3 +3,5 @@ TXT*
 sample*
 striprtf-0.0.13/*
 *.in
+*.docx
+*_draft*

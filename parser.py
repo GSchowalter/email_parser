@@ -8,7 +8,7 @@ def main(argv):
     subject = ""
     date = ""
     to = ""
-    FILE = open("sample.out", "w+")
+    FILE = open("first_draft.txt", "w+")
 
     with open(argv[1], 'r', errors="ignore") as _in:
         contents = _in.readlines()
