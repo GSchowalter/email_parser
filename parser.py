@@ -4,6 +4,16 @@ from striprtf import rtf_to_text
 import parsing_svc
 import sys
 
+"""
+Current problem and how to fix it.
+We are hitting the end of the iteration while building the body of one of the emails.
+Because of this we are missing the last email. 
+We need to end the body in the email parsing functions.
+Good luck!
+We can do this!
+"""
+
+
 def main(argv):
 
     # open file to parse and file to write to
