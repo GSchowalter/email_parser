@@ -2,14 +2,40 @@ From: Timothy McCready <timmccready@mac.com>
 Subject: Re: Re: Re: Re: Re: Re:
 Date: December 18, 2005 at 1:07:59 PM PST
 To: Bob Massey <masseymail@gmail.com>
-email 1 line 1
-email 1 line 2
-email 1 line 3
+This is the first email. It's in a standard formatting.
 On Dec 18, 2005, at 1:23 PM, Bob Massey wrote:
-email 2 line 1
-email 2 line 2
-email 2 line 3
+This is the second email in the document. It has a reply format.
 On Dec 18, 2005, at 3:23 AM, Timothy McCready wrote:
-email 3 line 1
-email 3 line 2
-email 3 line 3
+This is the third email and it's written in a reply format. This should only occur once but 
+it is quoted so one of the emails should be eliminated. 
+REMINDER TO ADD PREFERENCE TO THE STANDARD FORMATTED emails
+On Dec 17, 2005, at 9:39 PM, Bob Massey wrote:
+The fourth email. Writte in a reply format.
+On Dec 17, 2005, at 6:16 PM, Timothy McCready wrote:
+the fifth email. reply format.
+On Dec 17, 2005, at 8:02 PM, Bob Massey wrote:
+6 reply
+On Dec 17, 2005, at 4:52 PM, Timothy McCready wrote:
+and here is the 7th. also in reply format.
+From: Timothy McCready <timmccready@mac.com>
+Subject: Re: Re: Re: Re:
+Date: December 18, 2005 at 3:23:06 AM PST
+To: Bob Massey <masseymail@gmail.com>
+
+
+
+
+GD THIS SHOULDN'T BE HERE
+
+
+
+
+
+Begin forwarded message:
+From: roz stein <rozstein@hotmail.com>
+Date: February 3, 2006 at 1:22:14 PM EST
+To: timmccready@mac.com
+Subject: FW: Fwd: Special Issue: Bono's Best Sermon Yet
+
+8th email
+
